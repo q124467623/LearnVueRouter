@@ -12,9 +12,11 @@
 export default {
     name:'User',
     created() { //组件创建完的时候回调
-        // console.log('created')
-        document.title = '用户'
-
+        console.log('User created')
+        // document.title = '关于'
+    },
+    destroyed(){
+        console.log('User destroyed')
     },
     computed:{
         userId(){

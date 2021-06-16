@@ -10,9 +10,11 @@
 export default {
     name:'About',
     created() { //组件创建完的时候回调
-        // console.log('created')
-        document.title = '关于'
-
+        console.log('About created')
+        // document.title = '关于'
+    },
+    destroyed(){
+        console.log('About destroyed')
     },
     methods: {
         btnClick(){

@@ -8,7 +8,14 @@
 
 <script>
 export default {
-    name:'Profile'
+    name:'Profile',
+    created() { //组件创建完的时候回调
+        console.log('Profile created')
+        // document.title = '关于'
+    },
+    destroyed(){
+        console.log('Profile destroyed')
+    },
 }
 </script>
 
